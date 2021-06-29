@@ -76,14 +76,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Google policies</title>
 </head>
 <body>
     <header>
-        <h1>Header</h1>
+        <div>
+            <img src="https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png" alt="logo">
+        </div>
+
+        <div>
+            <nav>
+                <ul class="d_flex">
+                    <li>Introduzione</li>
+                    <li>Norme sulla privacy</li>
+                    <li>Termini di Servizio</li>
+                    <li>Tecnologie</li>
+                    <li>Domande frequenti</li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="container_55">
             <?php foreach($faq as $item => $singleFaq) { ?>
                 <h2><?= $singleFaq["title"] ?></h2>
 
